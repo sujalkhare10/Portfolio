@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sujal Khare | Software Developer & CS Undergrad</title>
+  <meta name="description" content="Portfolio of Sujal Khare - Aspiring Software Developer with a strong base in DSA, front-end technologies, and MERN stack. View projects, education, and cloud certifications.">
+  <meta name="author" content="Sujal Khare">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Pastel Decorative Background Orbs -->
+  <div class="ambient-glow orb-sage" aria-hidden="true"></div>
+  <div class="ambient-glow orb-periwinkle" aria-hidden="true"></div>
+  <div class="ambient-glow orb-peach" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-avatar">SK</span>
+        <span class="brand-name">Sujal Khare</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link cta-link">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <!-- Status Pill -->
+        <div class="status-pill animate-fade-in" style="--delay: 0.1s;">
+          <span class="status-dot"></span>
+          <span>Available for Developer Roles & Internships</span>
+        </div>
+
+        <!-- Main Title & Role -->
+        <h1 class="hero-title animate-fade-in" style="--delay: 0.2s;">
+          Hi, I'm <span class="name-highlight">Sujal Khare</span>
+        </h1>
+        
+        <p class="hero-subtitle animate-fade-in" style="--delay: 0.3s;">
+          Aspiring Software Developer passionate about building scalable web solutions, crafting intuitive user experiences, and exploring cloud architectures.
+        </p>
+
+        <!-- Technical Summary Quote Card -->
+        <div class="hero-bio-card animate-fade-in" style="--delay: 0.4s;">
+          <div class="bio-accent-bar"></div>
+          <p class="bio-text">
+            "Aspiring software developer with a strong base in <strong>DSA</strong> and practical experience in front-end technologies. Currently learning the <strong>MERN stack</strong> to build end-to-end web solutions. Passionate about continuous learning and developing scalable applications."
+          </p>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions animate-fade-in" style="--delay: 0.5s;">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <i data-lucide="mail"></i>
+          </a>
+          <a href="https://github.com/sujalkhare10" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://linkedin.com/in/sujal-khare10" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile">
+            <i data-lucide="linkedin"></i>
+          </a>
+        </div>
+
+        <!-- Key Metrics / Highlights Strip -->
+        <div class="hero-stats-grid animate-fade-in" style="--delay: 0.6s;">
+          <div class="stat-card pastel-blue">
+            <div class="stat-icon"><i data-lucide="graduation-cap"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">B.Tech CS</span>
+              <span class="stat-value">CGPA 7.03</span>
+            </div>
+          </div>
+
+          <div class="stat-card pastel-mint">
+            <div class="stat-icon"><i data-lucide="layers"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">Core Focus</span>
+              <span class="stat-value">DSA & MERN</span>
+            </div>
+          </div>
+
+          <div class="stat-card pastel-peach">
+            <div class="stat-icon"><i data-lucide="award"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">Credentials</span>
+              <span class="stat-value">AWS & CCNA</span>
+            </div>
+          </div>
+
+          <div class="stat-card pastel-purple">
+            <div class="stat-icon"><i data-lucide="sparkles"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">Cloud</span>
+              <span class="stat-value">Google Cloud Arcade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge pastel-mint">Technical Expertise</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-desc">A categorized overview of the tools, languages, and frameworks I use to bring digital products to life.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon pastel-blue"><i data-lucide="code-2"></i></div>
+              <h3>Languages</h3>
+            </div>
+            <div class="tags-wrapper">
+              <span class="tag tag-blue">JavaScript</span>
+              <span class="tag tag-blue">C</span>
+              <span class="tag tag-blue">C++</span>
+            </div>
+            <p class="category-note">Core languages utilized for algorithmic problem solving and dynamic web development.</p>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon pastel-peach"><i data-lucide="layout"></i></div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="tags-wrapper">
+              <span class="tag tag-peach">HTML5</span>
+              <span class="tag tag-peach">CSS3</span>
+              <span class="tag tag-peach">Bootstrap</span>
+              <span class="tag tag-peach">React</span>
+              <span class="tag tag-peach">Redux</span>
+            </div>
+            <p class="category-note">Building responsive, accessible, and interactive user interfaces with clean styling.</p>
+          </div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-category-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon pastel-mint"><i data-lucide="server"></i></div>
+              <h3>Backend & APIs</h3>
+            </div>
+            <div class="tags-wrapper">
+              <span class="tag tag-mint">Node.js</span>
+              <span class="tag tag-mint">RESTful APIs</span>
+              <span class="tag tag-mint">Postman</span>
+            </div>
+            <p class="category-note">Creating server logic, handling asynchronous events, and testing endpoints.</p>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon pastel-purple"><i data-lucide="database"></i></div>
+              <h3>Databases</h3>
+            </div>
+            <div class="tags-wrapper">
+              <span class="tag tag-purple">Firebase</span>
+              <span class="tag tag-purple">Cloud Firestore</span>
+            </div>
+            <p class="category-note">Real-time data synchronization, secure document storage, and database security rules.</p>
+          </div>
+
+          <!-- Tools & Version Control -->
+          <div class="skill-category-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon pastel-rose"><i data-lucide="git-branch"></i></div>
+              <h3>Tools & Version Control</h3>
+            </div>
+            <div class="tags-wrapper">
+              <span class="tag tag-rose">Git</span>
+              <span class="tag tag-rose">GitHub</span>
+              <span class="tag tag-rose">Firebase Hosting</span>
+            </div>
+            <p class="category-note">Collaborative workflows, versioning, deployment, and Continuous Delivery pipelines.</p>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="skill-category-card" data-reveal>
+            <div class="category-header">
+              <div class="category-icon pastel-cream"><i data-lucide="cpu"></i></div>
+              <h3>Core Computer Science</h3>
+            </div>
+            <div class="tags-wrapper">
+              <span class="tag tag-cream">Data Structures & Algorithms</span>
+              <span class="tag tag-cream">Object-Oriented Programming (OOPs)</span>
+              <span class="tag tag-cream">Computer Networks</span>
+            </div>
+            <p class="category-note">Strong foundations enabling write clean, optimized, and maintainable software.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge pastel-blue">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Production-deployed web applications solving real problems, built with modern web frameworks and live APIs.</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: TripVault -->
+          <article class="project-card" data-reveal>
+            <div class="project-card-inner">
+              <div class="project-content">
+                <div class="project-top">
+                  <span class="project-category-badge pastel-purple">Full-Stack Web App</span>
+                  <span class="project-status">
+                    <span class="status-dot"></span> Live Application
+                  </span>
+                </div>
+
+                <h3 class="project-name">TripVault</h3>
+                <p class="project-tagline">A comprehensive travel management platform to capture, organize, and revisit personal journeys.</p>
+
+                <ul class="project-bullets">
+                  <li>
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Developed a full-stack travel management application using <strong>React, Redux, JavaScript, and Firebase</strong>.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Implemented <strong>Firebase Authentication and Firestore</strong> for secure user management and real-time trip data storage with granular database security rules.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Engineered interactive trip detail pages featuring customized itineraries, travel journals, trip summaries, and an interactive <strong>Leaflet map</strong> for geographical location visualization.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">Redux</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Firebase Auth</span>
+                  <span class="tech-pill">Firestore</span>
+                  <span class="tech-pill">Leaflet Map</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://minor-project-7b04d.web.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <span>Visit TripVault</span>
+                    <i data-lucide="external-link"></i>
+                  </a>
+                  <a href="https://github.com/sujalkhare10" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    <i data-lucide="github"></i>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Interactive Visual Presentation Panel -->
+              <div class="project-visual-panel pastel-purple-bg">
+                <div class="visual-header">
+                  <div class="window-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <div class="address-bar">minor-project-7b04d.web.app</div>
+                </div>
+                <div class="visual-body">
+                  <div class="app-mock-card">
+                    <div class="mock-top">
+                      <div class="mock-badge"><i data-lucide="map-pin"></i> Travel Itinerary</div>
+                      <div class="mock-user"><i data-lucide="user"></i> Sujal</div>
+                    </div>
+                    <div class="mock-map-preview">
+                      <div class="map-path"></div>
+                      <div class="map-point point-1"><i data-lucide="compass"></i></div>
+                      <div class="map-point point-2"><i data-lucide="camera"></i></div>
+                      <div class="map-point point-3"><i data-lucide="bookmark"></i></div>
+                    </div>
+                    <div class="mock-footer-row">
+                      <span class="mock-chip"><i data-lucide="shield-check"></i> Firestore Rules</span>
+                      <span class="mock-chip"><i data-lucide="globe"></i> Real-time Sync</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Weather App -->
+          <article class="project-card" data-reveal>
+            <div class="project-card-inner">
+              <div class="project-content">
+                <div class="project-top">
+                  <span class="project-category-badge pastel-peach">API-Driven Web App</span>
+                  <span class="project-status">
+                    <span class="status-dot"></span> Live on GitHub Pages
+                  </span>
+                </div>
+
+                <h3 class="project-name">Weather App</h3>
+                <p class="project-tagline">Real-time weather forecasting tool delivering live atmospheric metrics and automatic geolocation climate data.</p>
+
+                <ul class="project-bullets">
+                  <li>
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Built a real-time weather forecasting web application using <strong>HTML5, CSS3, and JavaScript</strong>, integrating the <strong>OpenWeatherMap API</strong> to fetch temperature, humidity, and wind metrics.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Implemented dynamic UI updates and graceful error handling for invalid city searches, displaying responsive weather condition icons and clean typography.</span>
+                  </li>
+                  <li>
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Implemented advanced geolocation features via the native browser <strong>Geolocation API</strong>, automatically fetching local climate data on initial page load without manual search.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">HTML5</span>
+                  <span class="tech-pill">CSS3</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">OpenWeatherMap API</span>
+                  <span class="tech-pill">Geolocation API</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://sujalkhare10-wq.github.io/Weather-App/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <span>Launch Weather App</span>
+                    <i data-lucide="external-link"></i>
+                  </a>
+                  <a href="https://github.com/sujalkhare10" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    <i data-lucide="github"></i>
+                    <span>Repository</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Visual Presentation Panel -->
+              <div class="project-visual-panel pastel-peach-bg">
+                <div class="visual-header">
+                  <div class="window-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <div class="address-bar">sujalkhare10-wq.github.io/Weather-App</div>
+                </div>
+                <div class="visual-body">
+                  <div class="weather-mock-card">
+                    <div class="weather-mock-header">
+                      <div>
+                        <div class="weather-location"><i data-lucide="navigation"></i> Auto-Detected Location</div>
+                        <div class="weather-status-text">Partly Sunny & Mild</div>
+                      </div>
+                      <div class="weather-temp">24°C</div>
+                    </div>
+                    <div class="weather-metrics-row">
+                      <div class="weather-metric">
+                        <i data-lucide="droplets"></i>
+                        <span class="w-val">68%</span>
+                        <span class="w-label">Humidity</span>
+                      </div>
+                      <div class="weather-metric">
+                        <i data-lucide="wind"></i>
+                        <span class="w-val">12 km/h</span>
+                        <span class="w-label">Wind</span>
+                      </div>
+                      <div class="weather-metric">
+                        <i data-lucide="sun"></i>
+                        <span class="w-val">Low</span>
+                        <span class="w-label">UV Index</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge pastel-rose">Academic Foundation</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">Formal coursework in Computer Science, software engineering methodologies, and computational theory.</p>
+        </div>
+
+        <div class="education-card" data-reveal>
+          <div class="edu-time-badge pastel-rose">
+            <i data-lucide="calendar"></i>
+            <span>2023 – 2027</span>
+          </div>
+
+          <div class="edu-main-content">
+            <div class="edu-title-group">
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech) – Computer Science</h3>
+              <div class="edu-score-pill">
+                <i data-lucide="award"></i>
+                <span>CGPA: 7.03</span>
+              </div>
+            </div>
+
+            <h4 class="edu-institution">
+              <i data-lucide="school"></i>
+              <span>Gyan Ganga Institute of Technology and Sciences, Jabalpur</span>
+            </h4>
+            <p class="edu-affiliation">Affiliated with Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV University)</p>
+
+            <div class="edu-highlights">
+              <div class="highlight-item">
+                <i data-lucide="check"></i>
+                <span>Core coursework in Data Structures, Object-Oriented Programming, Computer Networks, and DBMS.</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="check"></i>
+                <span>Active participant in coding challenges, technical workshops, and web development collaborative teams.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section id="certifications" class="section cert-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge pastel-purple">Credentials & Milestones</span>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="section-desc">Recognized industry certifications validating expertise in Cloud Architecture, Networking, and Infrastructure.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: Google Developers Cloud -->
+          <div class="cert-card" data-reveal>
+            <div class="cert-icon-wrapper pastel-blue">
+              <i data-lucide="cloud"></i>
+            </div>
+            <div class="cert-details">
+              <span class="cert-issuer">Google Developers</span>
+              <h3 class="cert-name">Google Developers Cloud (Arcade)</h3>
+              <p class="cert-desc">Achieved certifications and technical skill badges completing hands-on labs across Google Cloud Platform services, security, and computing engines.</p>
+              <div class="cert-tag pastel-blue-tag">
+                <i data-lucide="shield-check"></i>
+                <span>Hands-on Cloud Labs & Badges</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: AWS Cloud Practitioner -->
+          <div class="cert-card" data-reveal>
+            <div class="cert-icon-wrapper pastel-peach">
+              <i data-lucide="server"></i>
+            </div>
+            <div class="cert-details">
+              <span class="cert-issuer">Amazon Web Services (AWS)</span>
+              <h3 class="cert-name">AWS Cloud Practitioner (CLF-C02)</h3>
+              <p class="cert-desc">Achieved certifications and formal training in AWS Cloud Practitioner (CLF-C02) and AWS Cloud Practitioner Essentials, covering core cloud services, billing, and security.</p>
+              <div class="cert-tag pastel-peach-tag">
+                <i data-lucide="check-circle"></i>
+                <span>CLF-C02 & Essentials Trained</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: CCNA -->
+          <div class="cert-card" data-reveal>
+            <div class="cert-icon-wrapper pastel-mint">
+              <i data-lucide="network"></i>
+            </div>
+            <div class="cert-details">
+              <span class="cert-issuer">Cisco</span>
+              <h3 class="cert-name">Cisco Certified Network Associate (CCNA)</h3>
+              <p class="cert-desc">Achieved CCNA certification validating comprehensive understanding of network fundamentals, IP connectivity, routing protocols, switching, and network security.</p>
+              <div class="cert-tag pastel-mint-tag">
+                <i data-lucide="check-circle"></i>
+                <span>Networking & Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge pastel-mint">Connect</span>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-desc">Have an open software opportunity, internship role, or project collaboration? Feel free to reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Details Column -->
+          <div class="contact-info-card" data-reveal>
+            <h3>Direct Contact Channels</h3>
+            <p class="contact-intro">I'm currently seeking software development internships and full-time early career roles. I respond promptly to all messages.</p>
+
+            <div class="contact-list">
+              <!-- Email Item with Copy Feature -->
+              <div class="contact-item">
+                <div class="contact-icon pastel-mint"><i data-lucide="mail"></i></div>
+                <div class="contact-meta">
+                  <span class="contact-label">Email Address</span>
+                  <a href="mailto:sujal.khare10@gmail.com" class="contact-value" id="emailVal">sujal.khare10@gmail.com</a>
+                </div>
+                <button class="btn-copy" id="copyEmailBtn" aria-label="Copy email address" title="Copy to clipboard">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <!-- Phone Item with Copy Feature -->
+              <div class="contact-item">
+                <div class="contact-icon pastel-blue"><i data-lucide="phone"></i></div>
+                <div class="contact-meta">
+                  <span class="contact-label">Phone / WhatsApp</span>
+                  <a href="tel:+919981329829" class="contact-value" id="phoneVal">+91 9981329829</a>
+                </div>
+                <button class="btn-copy" id="copyPhoneBtn" aria-label="Copy phone number" title="Copy to clipboard">
+                  <i data-lucide="copy"></i>
+                </button>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <div class="contact-item">
+                <div class="contact-icon pastel-purple"><i data-lucide="linkedin"></i></div>
+                <div class="contact-meta">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/sujal-khare10" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/sujal-khare10</a>
+                </div>
+                <a href="https://linkedin.com/in/sujal-khare10" target="_blank" rel="noopener noreferrer" class="btn-open-link" title="Open LinkedIn">
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+
+              <!-- GitHub Item -->
+              <div class="contact-item">
+                <div class="contact-icon pastel-rose"><i data-lucide="github"></i></div>
+                <div class="contact-meta">
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/sujalkhare10" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/sujalkhare10</a>
+                </div>
+                <a href="https://github.com/sujalkhare10" target="_blank" rel="noopener noreferrer" class="btn-open-link" title="Open GitHub">
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card" data-reveal>
+            <h3>Send a Message</h3>
+            <form id="contactForm" onsubmit="return handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="Your Name" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="you@example.com" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required placeholder="Project Inquiry / Internship Role" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required placeholder="Hello Sujal, I reviewed your work..." class="form-control"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span>Send Message</span>
+                <i data-lucide="send"></i>
+              </button>
+              <p class="form-feedback" id="formFeedback"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Minimal Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">Sujal Khare</span>
+        <span class="footer-dot">•</span>
+        <span class="footer-tagline">Software Developer & CS Undergrad (2023–2027)</span>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/sujalkhare10" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://linkedin.com/in/sujal-khare10" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:sujal.khare10@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+
+      <p class="copyright">Designed with clean pastel aesthetics. All details verified from resume.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element for copy actions -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
